@@ -1,0 +1,4 @@
+#cloud-config
+runcmd:
+- [ touch, /home/rancher/test1 ]
+- echo "test" > /home/rancher/test2
