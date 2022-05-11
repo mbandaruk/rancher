@@ -1,5 +1,8 @@
+#cloud-config
 runcmd:
 - echo "$(date)" >> /home/rancher/runcmd-log
+bootcmd:
+- echo "$(date)" >> /home/rancher/bootcmd-log
 rancher:
   services:
     user-volumes:
