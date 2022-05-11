@@ -3,4 +3,10 @@ runcmd:
 - [ touch, /home/rancher/test1 ]
 - echo "test" > /home/rancher/test2
 rancher:
-  console: centos
+  services:
+    user-volumes:
+      volumes:
+      - /home:/home
+      - /opt:/opt
+      - /var/lib/kubelet:/var/lib/kubelet
+      - /etc/kubernetes:/etc/kubernetes
