@@ -2,7 +2,7 @@
 runcmd:
 - echo "$(date)" >> /home/rancher/runcmd-log
 rancher:
-  console: centos
+  console: ubuntu
   services:
     user-volumes:
       volumes:
